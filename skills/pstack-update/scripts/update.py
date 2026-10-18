@@ -38,16 +38,42 @@ def create_archive_backup():
                 
     return backup_file
 
+import subprocess
+import re
+
 def check_remote_version(remote_url=None):
     """Checks remote repository for latest version."""
-    # Default to official repo or user configured remote
     curr_ver = get_current_version()
-    # Mock / API check (or git remote check)
+    latest_ver = curr_ver
+    try:
+        cmd = ["git", "ls-remote", "--tags", remote_url or "origin"]
+        out = subprocess.check_output(cmd, cwd=REPO_ROOT, stderr=subprocess.DEVNULL, text=True)
+        tags = []
+        for line in out.splitlines():
+            m = re.search(r"refs/tags/v?(\d+\.\d+\.\d+)", line)
+            if m:
+                tags.append(m.group(1))
+        if tags:
+            def ver_key(v):
+                return [int(x) for x in v.split(".")]
+            tags.sort(key=ver_key)
+            latest_ver = tags[-1]
+    except Exception:
+        pass
+
+    has_update = False
+    try:
+        def ver_key(v):
+            return [int(x) for x in v.split(".")]
+        has_update = ver_key(latest_ver) > ver_key(curr_ver)
+    except Exception:
+        pass
+
     return {
         "current_version": curr_ver,
-        "latest_version": curr_ver,
-        "has_update": False,
-        "notes": "Currently at latest release."
+        "latest_version": latest_ver,
+        "has_update": has_update,
+        "notes": f"Update available: v{latest_ver}" if has_update else "Currently at latest release."
     }
 
 if __name__ == "__main__":
