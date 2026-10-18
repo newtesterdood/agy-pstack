@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pstack",
+  "displayName": "pstack for Antigravity",
+  "version": "1.0.0",
+  "description": "Port of Lauren Tan's pstack for Google Antigravity. Rigorous agent engineering workflows, 23 playbooks, 24 architectural principles, and multi-agent coordination with Antigravity native drop-in replacements.",
+  "author": {
+    "name": "Lauren Tan (original author), Antigravity Community (port)"
+  },
+  "homepage": "https://github.com/cursor/plugins/tree/main/pstack",
+  "repository": "https://github.com/cursor/plugins",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "category": "developer-tools",
+  "tags": [
+    "pstack",
+    "poteto-mode",
+    "rigor",
+    "playbooks",
+    "principles",
+    "subagents",
+    "unslop"
+  ],
+  "suggestedPrompts": [
+    "/poteto-mode to run a rigorous engineering playbook",
+    "/pstack-update to check for updates from GitHub and migrate config",
+    "/pstack-sync to compare against upstream pstack and wire in native Antigravity replacements"
+  ]
+}
