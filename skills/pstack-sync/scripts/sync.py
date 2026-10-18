@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 pstack-sync helper:
-Compares Lauren Tan's official upstream pstack against this agy-pstack repository,
+Compares Lauren Tan's upstream pstack against this agy-pstack repository,
 audits differences, and ensures Antigravity native drop-in replacements are wired seamlessly.
 """
 import sys

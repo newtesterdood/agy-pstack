@@ -1,6 +1,6 @@
 # pstack for Antigravity: Core Engineering Rules & Runtime Harness
 
-These rules are active whenever the `pstack` plugin is enabled. They bridge Lauren Tan's official `pstack` methodology with Google Antigravity's agentic architecture, providing native drop-in replacements for all Cursor primitives while strictly enforcing deep engineering rigor.
+These rules are active whenever the `pstack` plugin is enabled. They bridge Lauren Tan's upstream `pstack` methodology with Google Antigravity's agentic architecture, providing native drop-in replacements for all Cursor primitives while strictly enforcing deep engineering rigor.
 
 ---
 

@@ -5,7 +5,7 @@ description: Maintainer skill to compare Lauren Tan's upstream pstack repository
 
 # pstack-sync
 
-Maintains synchronization between Lauren Tan's official `pstack` ([cursor/plugins/pstack](https://github.com/cursor/plugins/tree/main/pstack)) and this `agy-pstack` port, ensuring all Antigravity native drop-in replacements remain seamlessly wired.
+Maintains synchronization between Lauren Tan's upstream `pstack` ([cursor/plugins/pstack](https://github.com/cursor/plugins/tree/main/pstack)) and this `agy-pstack` port, ensuring all Antigravity native drop-in replacements remain seamlessly wired.
 
 ---
 

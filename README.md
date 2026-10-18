@@ -4,7 +4,7 @@
 [![Platform: Antigravity](https://img.shields.io/badge/Platform-Google%20Antigravity-4285F4.svg)](https://antigravity.google)
 [![Upstream: cursor/plugins](https://img.shields.io/badge/Upstream-cursor%2Fplugins%2Fpstack-black.svg)](https://github.com/cursor/plugins/tree/main/pstack)
 
-A clean, safe, and native port of Lauren Tan's ([@poteto](https://x.com/poteto)) **pstack** for **Google Antigravity**.
+An open-source port of Lauren Tan's ([@poteto](https://x.com/poteto)) **pstack** for **Google Antigravity**, complete with all upstream documentation, playbooks, and supporting material following open-source best practices.
 
 > *"If you want to go fast, go deep first. pstack helps you write less, but higher quality code. Rigorous agent workflows you can parallelize with confidence."* — Lauren Tan
 
@@ -34,7 +34,7 @@ This repository provides the full, unabridged collection of `pstack` workflows�
    - Validates configuration migrations and offers interactive adoption of new options.
 
 4. **Built-in `pstack-sync` Skill**:
-   - Compares Lauren Tan's official `cursor/plugins/pstack` against this `agy-pstack` repository.
+   - Compares Lauren Tan's upstream `cursor/plugins/pstack` against this `agy-pstack` repository.
    - Automatically detects upstream additions and synchronizes improvements.
    - Ensures Antigravity native drop-in replacements are permanently protected and wired in.
 
@@ -72,7 +72,7 @@ Run `/poteto-help` to have the agent inspect your goal and recommend the exact p
 Run `/pstack-update` to check GitHub for updates, create an automated backup archive, and migrate configuration.
 
 ### 4. Sync Upstream (Maintainers)
-Run `/pstack-sync` to compare against Lauren Tan's official `cursor/plugins/pstack` and audit all Antigravity drop-in replacements.
+Run `/pstack-sync` to compare against Lauren Tan's upstream `cursor/plugins/pstack` and audit all Antigravity drop-in replacements.
 
 ---
 
@@ -92,7 +92,7 @@ Run `/pstack-sync` to compare against Lauren Tan's official `cursor/plugins/psta
 ├── docs/
 │   ├── guide/                  # 10-part deep engineering guide
 │   └── harness/
-│       ├── antigravity.md      # Official Antigravity harness adapter specification
+│       ├── antigravity.md      # Antigravity harness adapter specification
 │       └── claude-code.md      # Reference Claude Code harness adapter
 └── skills/
     ├── poteto-mode/            # Main entry point & 23 playbooks

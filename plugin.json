@@ -3,7 +3,7 @@
   "name": "pstack",
   "displayName": "pstack for Antigravity",
   "version": "1.0.0",
-  "description": "Port of Lauren Tan's pstack for Google Antigravity. Rigorous agent engineering workflows, 23 playbooks, 24 architectural principles, and multi-agent coordination with Antigravity native drop-in replacements.",
+  "description": "Open-source port of Lauren Tan's pstack for Google Antigravity. Rigorous agent engineering workflows, 23 playbooks, 24 architectural principles, and multi-agent coordination with Antigravity native drop-in replacements.",
   "author": {
     "name": "Lauren Tan (original author), Antigravity Community (port)"
   },
