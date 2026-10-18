@@ -6,6 +6,9 @@
 
 An open-source port of Lauren Tan's ([@poteto](https://x.com/poteto)) **pstack** for **Google Antigravity**, complete with all upstream documentation, playbooks, and supporting material following open-source best practices.
 
+> [!NOTE]
+> This is an independent open-source community port. All credit for the original design, playbooks, and principles belongs to [Lauren Tan (@poteto)](https://x.com/poteto). Core improvements should be contributed upstream to [cursor/plugins/pstack](https://github.com/cursor/plugins/tree/main/pstack). See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
 > *"If you want to go fast, go deep first. pstack helps you write less, but higher quality code. Rigorous agent workflows you can parallelize with confidence."* — Lauren Tan
 
 This repository provides the full, unabridged collection of `pstack` workflows—including all 23 playbooks, 24 engineering principles, 54 specialized skills, and complete guides—engineered with seamless, native drop-in replacements for Google Antigravity.
@@ -52,7 +55,7 @@ ln -s /path/to/agy-pstack .agents/plugins/pstack
 ### Global Level (All Projects)
 Clone or copy this repository to your global Antigravity plugins directory:
 ```bash
-git clone https://github.com/your-username/agy-pstack.git ~/.gemini/config/plugins/pstack
+git clone https://github.com/newtesterdood/agy-pstack.git ~/.gemini/config/plugins/pstack
 ```
 
 ---

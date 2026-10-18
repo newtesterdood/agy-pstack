@@ -8,7 +8,7 @@
     "name": "Lauren Tan (original author), Antigravity Community (port)"
   },
   "homepage": "https://github.com/cursor/plugins/tree/main/pstack",
-  "repository": "https://github.com/cursor/plugins",
+  "repository": "https://github.com/newtesterdood/agy-pstack",
   "license": "MIT",
   "logo": "assets/logo.png",
   "category": "developer-tools",
