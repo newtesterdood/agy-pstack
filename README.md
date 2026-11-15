@@ -11,7 +11,7 @@ An open-source port of Lauren Tan's ([@poteto](https://x.com/poteto)) **pstack**
 
 > *"If you want to go fast, go deep first. pstack helps you write less, but higher quality code. Rigorous agent workflows you can parallelize with confidence."* — Lauren Tan
 
-This repository provides the full, unabridged collection of `pstack` workflows—including all 23 playbooks, 24 engineering principles, 54 specialized skills, and complete guides—engineered with seamless, native drop-in replacements for Google Antigravity.
+This repository provides the full, unabridged collection of `pstack` workflows—including all 23 playbooks, 24 engineering principles, 58 specialized skills (60 total including port utilities), and complete guides—engineered with seamless, native drop-in replacements for Google Antigravity.
 
 ---
 
@@ -20,7 +20,7 @@ This repository provides the full, unabridged collection of `pstack` workflows�
 1. **Complete Upstream Suite Intact**:
    - **All 23 Playbooks**: `bug-fix`, `feature`, `investigation`, `perf-issue`, `refactoring`, `prototype`, `shipping`, `multi-phase-plan`, `autonomous-run`, `orchestrate`, `autopilot-full`, and more.
    - **All 24 Principles**: `principle-laziness-protocol`, `principle-model-the-domain`, `principle-fix-root-causes`, `principle-prove-it-works`, `principle-attack-the-premise`, etc.
-   - **All Situational Skills**: `architect`, `arena`, `swarm`, `interrogate`, `unslop`, `no-comments`, `technical-writing`, `tdd`, `how`, `why`, `poteto-help`.
+   - **All Situational Skills**: `architect`, `arena`, `swarm`, `interrogate`, `statechart`, `create-formal-verification-skill`, `maintain-formal-verification-skill`, `ketchup-video`, `unslop`, `no-comments`, `technical-writing`, `tdd`, `how`, `why`, `poteto-help`.
    - **Full Documentation**: Complete 10-part engineering guide in `docs/guide/`.
 
 2. **Native Antigravity Drop-In Replacements**:
@@ -102,7 +102,7 @@ Run `/pstack-sync` to compare against Lauren Tan's upstream `cursor/plugins/psta
     ├── pstack-update/          # Update, backup archive, & migration skill
     ├── pstack-sync/            # Upstream sync & drop-in audit skill
     ├── principles/             # 24 core engineering principles
-    └── ...                     # 54 complete upstream skills
+    └── ...                     # 58 complete upstream skills
 ```
 
 ---

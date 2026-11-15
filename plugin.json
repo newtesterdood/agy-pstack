@@ -2,8 +2,8 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pstack",
   "displayName": "pstack for Antigravity",
-  "version": "1.0.0",
-  "description": "Open-source port of Lauren Tan's pstack for Google Antigravity. Rigorous agent engineering workflows, 23 playbooks, 24 architectural principles, and multi-agent coordination with Antigravity native drop-in replacements.",
+  "version": "1.1.0",
+  "description": "Open-source port of Lauren Tan's pstack for Google Antigravity. Rigorous agent engineering workflows, 23 playbooks, 24 architectural principles, formal verification, TLA+ statecharts, and multi-agent coordination with Antigravity native drop-in replacements.",
   "author": {
     "name": "Lauren Tan (original author), Antigravity Community (port)"
   },

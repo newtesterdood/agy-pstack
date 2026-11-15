@@ -12,9 +12,10 @@ When executing any pstack skill, playbook, or principle, seamlessly apply these 
 | :--- | :--- |
 | **`Task` Subagent** | Use the `invoke_subagent` tool. Map requested model roles: use `pro` for architectural planning, adversarial reviews, and complex judgment; use `flash` or `flash_lite` for exploratory research, test sweeps, and fast code generation; use `inherit` by default. Use `Workspace: 'branch'` or `Workspace: 'share'` when worktree isolation is requested. |
 | **`AskQuestion`** | Use Antigravity's `ask_question` tool with structured, actionable options. **Non-negotiable rule**: Never ask a question if the answer can be observed empirically by running a command, reading a file, or sketching a prototype. Reserve `ask_question` for genuine product direction or user preference calls. |
-| **`TodoWrite` / Todo List** | Maintain the active playbook's step-by-step checklist using an **Antigravity Markdown Artifact** in the artifact directory (`<appDataDir>/brain/<conversation-id>/`). Update the plan at each phase. |
-| **`Grep` / `Glob` / `Read`** | Use Antigravity native file inspection tools: `view_file`, `read_url_content`, and shell searches with `run_command`. |
-| **File Edits** | Use `replace_file_content` for surgical, verifiable edits and `write_to_file` for new files. |
+| **`TodoWrite` / Todo List / Project Store** | Maintain the active playbook's step-by-step checklist, tracker (`notes.md`), and state store using an **Antigravity Markdown Artifact** in the artifact directory (`<appDataDir>/brain/<conversation-id>/`). Update the plan and state at each phase. |
+| **PR & CI Subscriptions** | Use Antigravity's `schedule` tool or non-blocking background tasks (`run_command` with `manage_task` checking `gh pr checks`) instead of synchronous shell sleep polling loops. |
+| **`Grep` / `Glob` / `Read`** | Use Antigravity native file inspection tools: `read_file`, `view_file`, and shell searches with `run_command`. |
+| **File Edits** | Use `edit_file` / `replace_file_content` for surgical, verifiable edits and `write_file` / `write_to_file` for new files. |
 | **External Scripts** | Do not execute unvetted external scripts (e.g. destructive worktree pruners). Use Antigravity's safe, sandboxed shell execution and native git commands. |
 
 ---

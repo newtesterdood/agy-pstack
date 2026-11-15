@@ -12,10 +12,11 @@ This document defines the formal harness adapter specification for running Laure
 | :--- | :--- | :--- |
 | `Task` | `invoke_subagent` | Dispatches specialized subagents with dedicated prompts, roles, and model tiers. |
 | `AskQuestion` | `ask_question` | Renders interactive modal questions with structured options. Follows pstack rule: observe empirically first before asking user. |
-| `TodoWrite` / Todo List | Antigravity Markdown Artifacts | Created in `<appDataDir>/brain/<conversation-id>/` to track plan phases, checklists, and decisions. |
-| `Read` / `View` | `view_file` | Direct read tool supporting slice ranges and binary inspection. |
-| `Edit` | `replace_file_content` | Precise targeted substring replacement with strict whitespace matching. |
-| `Write` / `New File` | `write_to_file` | Creates new files or overwrites existing ones. |
+| `TodoWrite` / Todo List / Store | Antigravity Markdown Artifacts | Created in `<appDataDir>/brain/<conversation-id>/` to track plan phases, checklists, project tracker (`notes.md`), and decisions. |
+| `PR & CI Event Subscriptions` | `schedule` / background tasks | Automated asynchronous notifications via `schedule` or `manage_task` checking `gh pr checks` without host-blocking sleep loops. |
+| `Read` / `View` | `view_file` / `read_file` | Direct read tool supporting slice ranges and binary inspection. |
+| `Edit` | `replace_file_content` / `edit_file` | Precise targeted substring replacement with strict whitespace matching. |
+| `Write` / `New File` | `write_to_file` / `write_file` | Creates new files or overwrites existing ones. |
 | `Grep` / `Glob` | `run_command` (`rg`, `find`) / file tools | High-speed code searches in the workspace sandbox. |
 | `Bash` / Terminal | `run_command` | Sandboxed command execution with background task management via `manage_task`. |
 

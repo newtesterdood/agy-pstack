@@ -16,12 +16,16 @@ UPSTREAM_REPO = "https://github.com/cursor/plugins.git"
 ANTIGRAVITY_PROTECTED_FILES = {
     "plugin.json",
     "rules/AGENTS.md",
+    "AGENTS.md",
     "docs/harness/antigravity.md",
     "skills/pstack-update/SKILL.md",
     "skills/pstack-update/scripts/update.py",
     "skills/pstack-sync/SKILL.md",
     "skills/pstack-sync/scripts/sync.py",
-    "README.md"
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "UPSTREAM_README.md"
 }
 
 DROP_IN_REPLACEMENTS = {
